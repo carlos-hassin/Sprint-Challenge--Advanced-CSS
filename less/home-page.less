@@ -2,6 +2,11 @@
 
 .home {
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .intro {
 
     h2 {
@@ -58,6 +63,10 @@
       }
 
       .btn {
+        .align();
+        .mybutton(35px, 100px);
+
+        
       }
     }
 
@@ -71,5 +80,9 @@
         border-radius: 10px;
       }
     }
+  }
+
+  footer{
+    width:100%;
   }
 }// home

@@ -1,1 +1,28 @@
 // Mixins Here
+
+.align{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-out{
+  widows: 100%;
+  margin:0%;
+  padding:0%;
+}
+
+
+.mybutton(@height, @width){
+  background-color:black;
+  color: white;
+  font-size:18px;
+  border-radius: 10px;
+  height:@height;
+  width:@width;
+ 
+  &:hover{
+    background-color: rgb(242, 242, 242);
+    color:black;
+  }
+}
