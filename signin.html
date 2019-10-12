@@ -7,31 +7,50 @@
   <link href="css/signin.css" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
+<body background="img/cropped-delta_iv_heavy_streak_composite_edits.jpg">
+
+    <div class="navbar">
+        <div class="title">
+          <h1>SpaceWalkers</h1>
+        </div>
+        <nav class="links">
+          <a href="index.html">Home</a>
+          <a>About Us</a>
+          <a>Blog</a>
+          <a>Contact</a>
+          <a>Sign In</a>
+        </nav>
+      </div>
+
     <div class="containerS">
         <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
+          
+        <div class="containerS2">
 
-          <button>
-            <a href="index.html">Go Home</a>
-          </button>
+          <div class="options">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+         
+            <label for="name">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+      
+          <div class="write">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+  
+      
+          </div>
+        </div>
       
         </form>
       </div>
