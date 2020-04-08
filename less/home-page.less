@@ -2,6 +2,12 @@
 
 .home {
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
   .intro {
 
     h2 {
@@ -14,10 +20,30 @@
   
   }
 
+  .space-img img{
+    width:100%;
+  }
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+
+    @media @phone{
+      .align();
+      width:100%;
+
+      :nth-child(1){
+        width:90vw;
+      }
+      
+      :nth-child(2){
+        .gone;
+      }
+
+      :nth-child(3){
+        .gone;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +72,21 @@
     display: flex;
     justify-content: center;
 
+    @media@phone{
+      width:100%;
+      display: flex;
+      flex-direction: column-reverse;
+      padding:1% 1%;
+    }
+    
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width:90vw;
+        margin:1% 4%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +97,50 @@
       }
 
       .btn {
+        .align();
+        .mybutton(35px, 100px);
+
+        @media @phone{
+          .mybutton(50px, 100%);
+          
+        }
+        
+        a{
+          .align;
+          .mybutton(35px, 100px);
+
+          @media @phone{
+            .mybutton(50px, 100%);
+          }
+        }
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone{
+          .align;
+          width:90vw;
+          margin:20px 0px;
+        }
       }
+    }
+  }
+
+  footer{
+    width:75vw;
+
+    @media @phone{
+      width:100%;
     }
   }
 }// home
